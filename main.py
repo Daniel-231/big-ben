@@ -20,6 +20,7 @@ audioFileArray = ["resources/sound-effect-1.mp3", "resources/sound-effect-2.mp3"
 
 # Specify the audio file to play at midnight
 midnight_audio_file = "resources/strike-12.mp3"
+fnafEasterEgg = "five-nights-at-freddys-6-am.mp3"
 
 @bot.event
 async def on_ready():
@@ -46,6 +47,8 @@ async def join_voice_channel_at_target_time():
         file_to_play = midnight_audio_file  # Play the designated midnight file
     elif now.endswith(":00"):
         file_to_play = random.choice(audioFileArray)  # Play a random file every hour
+    elif now.endswith("6:00"):
+        file_to_play = fnafEasterEgg
     else:
         print(f"Current time is {now}. Waiting for the next hour...")
         return  # Exit the function if it's not on the hour
