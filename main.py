@@ -20,7 +20,7 @@ audioFileArray = ["resources/sound-effect-1.mp3", "resources/sound-effect-2.mp3"
 
 # Specify the audio file to play at midnight
 midnight_audio_file = "resources/strike-12.mp3"
-fnafEasterEgg = "five-nights-at-freddys-6-am.mp3"
+fnafEasterEgg = "resources/five-nights-at-freddys-6-am.mp3"
 
 @bot.event
 async def on_ready():
